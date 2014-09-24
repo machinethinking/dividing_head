@@ -4,8 +4,7 @@ import sys
 
 
 def gcd(a, b):
-    """
-    Return greatest common denominator of a and b
+    """ Return greatest common denominator of a and b
 
     >>> gcd(5, 10)
     5
@@ -22,14 +21,14 @@ def gcd(a, b):
 
 
 def factors(n):
-    """
-    Return a list of factors for n
+    """ Return a list of factors for n
 
     >>> factors(6)
     [1, 6, 2, 3]
     >>> factors(12)
     [1, 12, 2, 6, 3, 4]
     """
+
     fact = [1, n]
     check = 2
     rootn = sqrt(n)
@@ -52,7 +51,6 @@ def main(num_to_divide):
     >>> main(21)
     index plate 21
     Complete turns: 1 plus 19 holes
-
     """
 
     # index plates for my dividing head
@@ -79,8 +77,6 @@ def main(num_to_divide):
 
 if __name__ == "__main__":
 
-    # run with unit tests
-    # python -m doctest divide.py -v
     try:
         num_to_divide = int(sys.argv[1])
     except:
